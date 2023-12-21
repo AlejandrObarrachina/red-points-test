@@ -2,9 +2,11 @@
 
 ## Description
 
-The main purpose is to create a CRUD application based on Movies. With the structure and entities created I've implementated all the functionalities to Create, Read, Update and Delete Movies as well as unitary and integration testing for the application.
+The main purpose is to create a CRUD application based on Movies. With the structure and entities created, I've implemented all the functionalities to Create, Read, Update and Delete Movies as well as unit and integration testing of the application.
 
-### Those are the bulletpoints of the exercice:
+For any enquiries or doubts, please don't hesitate to [contact me.](#Author)
+
+### These are the bulletpoints of the exercice:
 * Create a CRUD for Movie.
 * Create unitary tests for MovieService.
 * Create an integration test to get a movie.
@@ -34,7 +36,7 @@ mvn clean install
 
 ## Features
 
-Además de lo requerido en el enunciado me ha parecido buena idea implementar las siguientes funcionalidades :
+Besides of the requirements for the app I thought it would be nice to add this:
 
 - GlobalHandlerException
 - CustomExceptions
@@ -45,8 +47,8 @@ Además de lo requerido en el enunciado me ha parecido buena idea implementar la
 
 ## Author
 
-- **Nombre:** Alejandro Barrachina
-- **Correo electrónico:** alejandrobrokenh@email.com
+- **Name:** Alejandro Barrachina
+- **Email:** alejandrobrokenh@email.com
 - **LinkedIn:** [Tu Perfil de LinkedIn](https://www.linkedin.com/in/alejandro-barrachina/)
 
 - [@alejandrObarrachina](https://www.github.com/alejandrObarrachina)
