@@ -212,3 +212,60 @@
 13:33:01.218 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
 13:33:04.261 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 3.224 seconds (process running for 5.504)
 13:33:04.862 [main] DEBUG c.r.interview.service.MovieService - Wrong id error on deleteMovie in Service with id: 999
+13:52:46.088 [main] INFO  com.redpoints.interview.Application - Starting Application using Java 17.0.6 with PID 13804 (C:\Users\aleja\Desktop\red-points-test\target\classes started by aleja in C:\Users\aleja\Desktop\red-points-test)
+13:52:46.090 [main] DEBUG com.redpoints.interview.Application - Running with Spring Boot v3.1.6, Spring v6.0.14
+13:52:46.090 [main] INFO  com.redpoints.interview.Application - No active profile set, falling back to 1 default profile: "default"
+13:52:48.851 [main] INFO  com.redpoints.interview.Application - Started Application in 3.052 seconds (process running for 4.023)
+13:53:32.509 [http-nio-8080-exec-7] DEBUG c.r.interview.service.MovieService - Wrong id error on getMovieById in Service with id: 1
+15:14:49.892 [main] INFO  com.redpoints.interview.Application - Starting Application using Java 17.0.6 with PID 4264 (C:\Users\aleja\Desktop\red-points-test\target\classes started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:14:49.895 [main] DEBUG com.redpoints.interview.Application - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:14:49.896 [main] INFO  com.redpoints.interview.Application - No active profile set, falling back to 1 default profile: "default"
+15:14:55.024 [main] INFO  com.redpoints.interview.Application - Started Application in 5.567 seconds (process running for 7.139)
+15:15:31.509 [main] INFO  com.redpoints.interview.Application - Starting Application using Java 17.0.6 with PID 25424 (C:\Users\aleja\Desktop\red-points-test\target\classes started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:15:31.514 [main] DEBUG com.redpoints.interview.Application - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:15:31.515 [main] INFO  com.redpoints.interview.Application - No active profile set, falling back to 1 default profile: "default"
+15:15:36.234 [main] INFO  com.redpoints.interview.Application - Started Application in 5.172 seconds (process running for 5.805)
+15:28:23.593 [main] INFO  com.redpoints.interview.Application - Starting Application using Java 17.0.6 with PID 13788 (C:\Users\aleja\Desktop\red-points-test\target\classes started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:28:23.595 [main] DEBUG com.redpoints.interview.Application - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:28:23.596 [main] INFO  com.redpoints.interview.Application - No active profile set, falling back to 1 default profile: "default"
+15:28:26.363 [main] INFO  com.redpoints.interview.Application - Started Application in 3.033 seconds (process running for 3.709)
+15:32:43.125 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 11160 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:32:43.126 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:32:43.126 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:32:46.529 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 3.598 seconds (process running for 4.66)
+15:32:50.712 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 2464 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:32:50.713 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:32:50.713 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:32:54.531 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.009 seconds (process running for 5.136)
+15:35:31.216 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 4996 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:35:31.217 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:35:31.217 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:35:35.164 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.137 seconds (process running for 5.274)
+15:37:36.591 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 25056 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:37:36.592 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:37:36.593 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:37:40.497 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.097 seconds (process running for 5.237)
+15:45:05.438 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 22352 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:45:05.438 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:45:05.439 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:45:09.329 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.084 seconds (process running for 5.197)
+15:48:24.890 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 25528 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:48:24.891 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:48:24.892 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:48:28.646 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 3.947 seconds (process running for 5.066)
+15:49:50.166 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 10940 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:49:50.167 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:49:50.167 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:49:54.121 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.148 seconds (process running for 5.25)
+15:51:22.197 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 11440 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:51:22.198 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:51:22.198 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+15:51:25.609 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 3.605 seconds (process running for 4.624)
+15:51:33.016 [main] INFO  com.redpoints.interview.Application - Starting Application using Java 17.0.6 with PID 3896 (C:\Users\aleja\Desktop\red-points-test\target\classes started by aleja in C:\Users\aleja\Desktop\red-points-test)
+15:51:33.018 [main] DEBUG com.redpoints.interview.Application - Running with Spring Boot v3.1.6, Spring v6.0.14
+15:51:33.019 [main] INFO  com.redpoints.interview.Application - No active profile set, falling back to 1 default profile: "default"
+15:51:35.627 [main] INFO  com.redpoints.interview.Application - Started Application in 2.884 seconds (process running for 3.476)
+16:13:03.499 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Starting MovieControllerIntegrationTest using Java 17.0.6 with PID 1388 (started by aleja in C:\Users\aleja\Desktop\red-points-test)
+16:13:03.500 [main] DEBUG c.r.i.c.MovieControllerIntegrationTest - Running with Spring Boot v3.1.6, Spring v6.0.14
+16:13:03.501 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+16:13:07.432 [main] INFO  c.r.i.c.MovieControllerIntegrationTest - Started MovieControllerIntegrationTest in 4.125 seconds (process running for 5.271)

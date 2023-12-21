@@ -36,14 +36,14 @@ public class MovieController {
     }
 
     @PostMapping(value = "/movie", consumes = "application/json")
-    public ResponseEntity<Object> addMovie(@RequestBody @Valid Movie movie) {
+    public ResponseEntity<Object> addMovie(@RequestBody @Valid Movie movie) throws Exception {
         return ResponseHandler.responseBuilder("Movie successfully added to DB", HttpStatus.OK, movieService.addMovie(movie));
 
     }
 
     @PutMapping(value = "/movie/{id}", consumes = "application/json")
     public ResponseEntity<Object> updateMovie(@PathVariable Long id, @RequestBody @Valid Movie movie) throws WrongIdException {
-        return ResponseHandler.responseBuilder("Movie successfully added to DB", HttpStatus.OK, movieService.updateMovie(id, movie));
+        return ResponseHandler.responseBuilder("Movie successfully updated to DB", HttpStatus.OK, movieService.updateMovie(id, movie));
     }
 
     @DeleteMapping(value = "/movie/{id}")

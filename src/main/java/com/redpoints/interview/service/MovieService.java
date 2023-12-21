@@ -47,24 +47,24 @@ public class MovieService {
         }
     }
 
-    public Object addMovie(Movie movie) {
+    public Object addMovie(Movie movie) throws Exception {
         try {
            return repository.save(mapper.modelToEntity(movie));
         } catch (Exception e) {
-            throw new RuntimeException();
+            throw new Exception();
         }
     }
 
     public Object updateMovie(Long id, Movie movie) throws WrongIdException {
 
-            if (repository.existsById(id)) {
+            if (!repository.existsById(id)) {
+                throw new WrongIdException(id);
+            } else {
                 MovieEntity movieToUpdate = getMovieById(id);
                 movieToUpdate.setTitle(movie.getTitle());
                 movieToUpdate.setYear(movie.getYear());
                 movieToUpdate.setDirector(movie.getDirector());
-               return repository.save(movieToUpdate);
-            } else {
-                throw new WrongIdException(id);
+                return repository.save(movieToUpdate);
             }
     }
 

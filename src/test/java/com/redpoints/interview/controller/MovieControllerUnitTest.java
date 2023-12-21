@@ -12,7 +12,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
@@ -60,10 +59,8 @@ public class MovieControllerUnitTest {
         Long movieId = 1L;
         MovieEntity mockMovie = new MovieEntity();
         mockMovie.setId(movieId);
-
         Movie mappedMovie =  new Movie();
         mappedMovie.setId(movieId);
-
         when(movieService.getMovieById(movieId)).thenReturn(mockMovie);
         when(movieMapper.entityToModel(mockMovie)).thenReturn(mappedMovie);
 
@@ -77,7 +74,7 @@ public class MovieControllerUnitTest {
     }
 
     @Test
-    void IsAddMovie_CallingAddMovieMethodOfService_True() {
+    void IsAddMovie_CallingAddMovieMethodOfService_True() throws Exception {
         Movie movie = new Movie();
         movieController.addMovie(movie);
 
