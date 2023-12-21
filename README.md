@@ -6,10 +6,10 @@ The main purpose is to create a CRUD application based on Movies. With the struc
 
 For any enquiries or doubts, please don't hesitate to [contact me.](#Author)
 
-### These are the bulletpoints of the exercice:
+### These are the key points of the exercice:
 * Create a CRUD for Movie.
 * Create unitary tests for MovieService.
-* Create an integration test to get a movie.
+* Create an integration test to get a Movie.
 
 
 
