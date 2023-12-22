@@ -89,13 +89,10 @@ public class MovieServiceUnitTest {
         updatedMovie.setTitle("Interstellar");
         updatedMovie.setDirector("Nolan");
 
-        // Simula el comportamiento del repositorio
         when(movieRepository.existsById(nonExistingMovieId)).thenReturn(false);
 
-        // Act y Assert
         assertThrows(WrongIdException.class, () -> movieService.updateMovie(nonExistingMovieId, updatedMovie));
 
-        // Verifica que el método del repositorio se haya llamado correctamente
         verify(movieRepository, times(1)).existsById(nonExistingMovieId);
         verify(movieRepository, never()).save(any(MovieEntity.class));
     }

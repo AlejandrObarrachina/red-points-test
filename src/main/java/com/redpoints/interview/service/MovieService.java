@@ -31,7 +31,7 @@ public class MovieService {
         try {
             return repository.findAll();
         } catch (Exception e) {
-            logger.debug("There was an error on GetAllMovies in Service: "+ e.getMessage());
+            logger.error("There was an error on GetAllMovies in Service: "+ e.getMessage());
             throw new Exception(e.getMessage());
         }
     }
@@ -42,7 +42,7 @@ public class MovieService {
         if (movieEntity.isPresent()) {
             return movieEntity.get();
         } else {
-            logger.debug("Wrong id error on getMovieById in Service with id: " + id);
+            logger.error("Wrong id error on getMovieById in Service with id: " + id);
             throw new WrongIdException(id);
         }
     }
@@ -74,7 +74,7 @@ public class MovieService {
             repository.deleteById(id);
             return new ResponseEntity<>(HttpStatus.OK);
         } else {
-            logger.debug("Wrong id error on deleteMovie in Service with id: " + id);
+            logger.error("Wrong id error on deleteMovie in Service with id: " + id);
             throw new WrongIdException(id);
         }
 

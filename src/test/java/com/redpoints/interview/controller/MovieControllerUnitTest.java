@@ -12,8 +12,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import java.util.HashMap;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -45,10 +47,11 @@ public class MovieControllerUnitTest {
         when(movieService.getAllMovies()).thenReturn(List.of(new MovieEntity(), new MovieEntity()));
         when(movieMapper.entitiesToModels(anyList())).thenReturn(List.of(new Movie(), new Movie()));
 
-        List<Movie> result = movieController.getAllMovies();
-
+        ResponseEntity<Object> result = movieController.getAllMovies();
+        HashMap<String, Object> body = (HashMap) result.getBody();
+        List<Movie> data = (List<Movie>) body.get("data");
         assertNotNull(result);
-        assertEquals(2, result.size());
+        assertEquals(2, data.size());
 
         verify(movieService, times(1)).getAllMovies();
         verify(movieMapper, times(1)).entitiesToModels(anyList());
@@ -64,10 +67,12 @@ public class MovieControllerUnitTest {
         when(movieService.getMovieById(movieId)).thenReturn(mockMovie);
         when(movieMapper.entityToModel(mockMovie)).thenReturn(mappedMovie);
 
-        Movie result = movieController.getMovieById(movieId);
+        ResponseEntity<Object> result = movieController.getMovieById(movieId);
+        HashMap<String, Object> body = (HashMap) result.getBody();
+        Movie data = (Movie) body.get("data");
 
         assertNotNull(result);
-        assertEquals(movieId, result.getId());
+        assertEquals(movieId, data.getId());
 
         verify(movieService, times(1)).getMovieById(movieId);
         verify(movieMapper, times(1)).entityToModel(mockMovie);
@@ -76,7 +81,9 @@ public class MovieControllerUnitTest {
     @Test
     void IsAddMovie_CallingAddMovieMethodOfService_True() throws Exception {
         Movie movie = new Movie();
-        movieController.addMovie(movie);
+        ResponseEntity<Object> result = movieController.addMovie(movie);
+        HashMap<String, Object> body = (HashMap) result.getBody();
+        assertEquals(HttpStatus.CREATED, body.get("httpStatus"));
 
         verify(movieService, times(1)).addMovie(movie);
     }
@@ -86,8 +93,9 @@ public class MovieControllerUnitTest {
         Long movieId = 1L;
         Movie movie = new Movie();
 
-        movieController.updateMovie(movieId, movie);
-
+        ResponseEntity<Object> result = movieController.updateMovie(movieId, movie);
+        HashMap<String, Object> body = (HashMap) result.getBody();
+        assertEquals(HttpStatus.OK, body.get("httpStatus"));
         verify(movieService, times(1)).updateMovie(movieId, movie);
     }
 
@@ -95,7 +103,9 @@ public class MovieControllerUnitTest {
     void IsDeleteMovie_CallingUpdateMovieMethodOfService_True() throws WrongIdException {
         Long movieId = 1L;
 
-        movieController.deleteMovie(movieId);
+        ResponseEntity<Object> result = movieController.deleteMovie(movieId);
+        HashMap<String, Object> body = (HashMap) result.getBody();
+        assertEquals(HttpStatus.OK, body.get("httpStatus"));
 
         verify(movieService, times(1)).deleteMovie(movieId);
     }
